@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>name</key>
+			<string>Great bay</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJX
+			TlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAF
+			gAdUdHlwZVRyb3dzXxAdU2VsZWN0aW9uRGV0YWlsVHlwZU5TSW5k
+			ZXhTZXTSFwsYGVxOU1JhbmdlQ291bnQQAIAG0hscHR5aJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1pOU0luZGV4U2V0oh8gWk5TSW5kZXhTZXRY
+			TlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVk
+			QXJjaGl2ZXLRJidUZGF0YYABAAgAEQAaACMALQAyADcAQABGAE0A
+			VQBgAGcAagBsAG4AcQBzAHUAdwB8AIEAoQCmALMAtQC3ALwAxwDQ
+			ANsA3gDpAPIA9wEEAQcBGQEcASEAAAAAAAACAQAAAAAAAAAoAAAA
+			AAAAAAAAAAAAAAABIw==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {694, 450}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>
+USE Great_BayDB;
+
+CREATE TABLE products (
+id INT NOT NULL AUTO_INCREMENT,
+task VARCHAR(12) NULL,
+jobs DECIMAL(8,4) NULL,
+projects INT NULL,
+PRIMARY KEY(id)
+
+);
+
+Insert Into products (tasks, jobs, projects)
+VALUES ("title", 9.50, 10);
+
+Insert Into products (tasks, jobs, projects)
+VALUES ("artist", 5.0, 10);
+
+Insert Into products (tasks, jobs, projects)
+VALUES ("genre", 6.50, 10);
+
+
+SELECT * FROM Great_BayDB.products;</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>294</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>SELECT * FROM ice_DB</string>
+		<string>SELECT * from ingredients</string>
+		<string>INSERT INTO ingredients(name,has_lettuce, food_tomato, food_bread, second_name)
+
+values("Kofi",TRUE,TRUE,FALSE,"Opoku")</string>
+		<string>CREATE TABLE favorite_movies (
+id INTEGER(11) AUTO_INCREMEBT NOT NULL,
+movie VARCHAR(50) NOT NULL,
+producer VARCHAR ( 50),
+five_times BOOLEAN DEFAULT false,
+score INTEGER(5)
+)</string>
+		<string>)</string>
+		<string>CREATE TABLE ingredients (
+name VARCHAR(30) NOT NULL,
+has_lettuce BOOLEAN NOT NULL,
+food_tomato VARCHAR(30),
+food_bread Integer(10)
+
+)</string>
+		<string>create DATABASE food_db</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.7.18</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
